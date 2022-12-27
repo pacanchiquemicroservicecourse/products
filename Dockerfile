@@ -6,6 +6,6 @@
 # 
 # ------------------------------------------------------------------------
 
-FROM openjdk:11-jre-slim-buster
-COPY /target/products-0.0.1-SNAPSHOT.jar /opt/microservice/products.jar
+FROM openjdk:19-jre-slim-buster
+COPY target/products-0.0.1-SNAPSHOT.jar /opt/microservice/products.jar
 ENTRYPOINT ["java","-jar","/opt/microservice/products.jar"]

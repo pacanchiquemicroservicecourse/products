@@ -19,6 +19,8 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    @Transient
+    private String port;
     private Double price;
     @Temporal(TemporalType.DATE)
     private Date create;
